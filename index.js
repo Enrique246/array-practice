@@ -36,6 +36,8 @@ console.log(fullNames);
 // })
 
 const ordered = inventors.sort((a,b)=>a.year > b.year ? 1 : -1)
+// ">" go down all the way
+// "<" go up all the way
 
 console.table(ordered);
 
@@ -46,6 +48,13 @@ const totalYears = inventors.reduce((total, inventor) => {
 },0);
 
 console.log(totalYears);
+
+// var totalYears = 0;
+
+// for (var i = 0 ; i<inventors.length; i++){
+//     totalYears += inventors[i].year
+// }
+// console.log(totalYears);
 
 // 5. Sort the inventors by years lived
 
